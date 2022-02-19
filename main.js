@@ -9,6 +9,6 @@ navToggle.addEventListener("click",function(){
  //else{
      //links.classList.add("show-links");
  //}
- //can be done in just 1 line below
+ //can be done in just 1 line below 
  links.classList.toggle("show-links");
 });
