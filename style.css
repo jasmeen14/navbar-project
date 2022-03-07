@@ -1,3 +1,20 @@
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(210, 36%, 96%);
+    font-family: sans-serif;
+    color: hsl(209, 61%, 16%);
+    font-size: 1rem;
+}
+nav{
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
 h2{
     text-align: center;
     background-color: rgb(156, 226, 250);
@@ -6,13 +23,24 @@ h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .nav-header{
-    padding: 0;
-    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .nav-toggle{
-    display: none;
-    color:rgb(156, 226, 250) ;
+    font-size: 25px;
+    background: transparent;
+    border-color: transparent;
+    color:hsl(205, 78%, 60%) ;
     text-align: right;
+}
+.nav-toggle:hover{
+    transform: rotate(90deg);
+    color: hsl(205, 24%, 44%);
+}
+ul{
+    list-style-type: none;
 }
 .fa-solid{
 font-size: 20px;
@@ -20,26 +48,26 @@ background: transparent;
 
 }
 .links{
-    height: auto;
-    display: flex;
-    font-size: 20px;
-    list-style: none;
-}
+    height: 0;
+    overflow: hidden;
+   }
 .links a{
-    
-    padding: 0;
-    margin: 20px;
+    color: hsl(209, 34%, 30%);
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
 }
 .links a:hover{
-    padding: 0;
-    background: transparent;
+   
+    background:hsl(205, 86%, 81%);
+    padding-left: 1.5rem;
+    color: hsl(205, 78%, 60%);
 }
 .social-icons{
-    display: flex;
-    list-style: none;
-    margin-top: 40px;
-    margin-left: 500px;
+    display: none
+}
 }
 .fa-brands{
     margin: 10px;
@@ -60,9 +88,38 @@ background: transparent;
         max-width: 1170px;
         margin: 0 auto;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
+    }
+    .nav-header{
+        padding: 0;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .links{
+        height: auto;
+        display: flex;
+    }
+    .links a{
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .links a:hover{
+        padding: 0;
+        background: transparent;
+    }
+    .social-icons{
+        display: flex;
+    }
+    .social-icons a{
+        margin: 0 0.5rem;
+        color: hsl(209, 34%, 30%);
+    }
+    .social-icons a:hover{
+        color: hsl(205, 78%, 60%);
     }
 }
  
